@@ -9,7 +9,6 @@ var config = {
       port: 8080
    },
    module: {
-      mode: 'production', // <= It is necessary to resolve the warning
       rules: [
          {
             test: /\.jsx?$/,
@@ -21,5 +20,6 @@ var config = {
          }
       ]
    }
+   
 }
 module.exports = config;
