@@ -1,5 +1,5 @@
 var config = {
-   entry: './main.js',
+   entry: './app/main.js',
    output: {
       path:'/',
       filename: 'index.js',
@@ -10,6 +10,11 @@ var config = {
    },
    module: {
       rules: [
+         {
+          test: /\.scss$/,
+          exclude: /node_modules/,
+          use: cssLoader,
+        },
          {
             test: /\.jsx?$/,
             exclude: /node_modules/,
